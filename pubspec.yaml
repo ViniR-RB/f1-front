@@ -36,6 +36,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.2
+  flutter_modular: ^5.0.3
+  dio: ^5.1.1
+  flutter_secure_storage: ^8.0.0
+  flutter_dotenv: ^5.0.2
+  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +67,7 @@ flutter:
   assets:
     - assets/images/background.jpeg
     - assets/images/f1.svg
+    - .env
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

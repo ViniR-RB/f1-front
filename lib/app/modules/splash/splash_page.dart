@@ -1,8 +1,26 @@
+import 'package:f1youtube/core/constants/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_svg/svg.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
+
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  _initial() {
+    Future.delayed(const Duration(seconds: 2));
+    Modular.to.pushNamed(NamedRoutes.logIn);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _initial();
+  }
 
   @override
   Widget build(BuildContext context) {
