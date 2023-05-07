@@ -7,8 +7,8 @@ class SecureStorage {
   ));
 
   SecureStorage();
-  readAll(String key) {
-    _storage.readAll();
+  readAll() {
+    return _storage.readAll();
   }
 
   read(String key) {

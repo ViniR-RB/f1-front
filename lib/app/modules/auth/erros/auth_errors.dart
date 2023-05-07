@@ -8,3 +8,10 @@ class LoginException implements AuthException {
   final String message;
   LoginException(this.message);
 }
+
+
+class SignUpException implements AuthException {
+   @override
+  final String message;
+  SignUpException(this.message);
+}
